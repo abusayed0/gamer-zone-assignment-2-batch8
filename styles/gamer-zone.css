@@ -27,7 +27,14 @@ color: #534C64;
     font-weight: 600;
     text-transform: uppercase;
 }
-
+.short-title-text{
+    font-size: 20px;
+    font-weight: 500;
+}
+.section-heading{
+    font-size: 48px;
+    font-weight: 700;
+}
 /* header style start  */
 
 /* nav style start  */
@@ -43,7 +50,7 @@ color: #534C64;
 
 .logo-container,
 .menu-items,
-.social-container {
+.social-container,.sub-banner-container{
     display: flex;
     align-items: center;
 }
@@ -57,7 +64,7 @@ color: #534C64;
     height: 40px;
 }
 
-.logo-container h2 {
+.logo-container h3 {
     margin: 0px;
     font-size: 45px;
     font-weight: 700;
@@ -101,19 +108,20 @@ h4 {
     padding: 0 100px;
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 50px;
 }
-.banner-container>div{
+.banner-container>div,.sub-banner-container>div
+{
     width: 50%;
 }
-.text-description h3{
+.banner-description h3{
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
     margin: 0 0 5px 0;
 }
-.text-description h1{
-    font-size: 95px;
+.banner-description h1{
+    font-size: 90px;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 0 20px 0;
@@ -123,34 +131,75 @@ h4 {
     display: flex;
     gap: 25px;
 }
-.image-container img{
+.image-container img,.sub-banner-image img{
     width: 100%;
 }
 /* banner style end */
+
+/* sub banner section style start  */
+.sub-banner-container{
+    background:linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+    padding: 30px 100px;
+    gap: 30px;
+}
+.sub-banner-description{
+    text-align: right;
+}
+.sub-banner-description h2{
+    margin: 0;
+}
+.text-purpose{
+    font-size: 25px;
+    font-weight: 500;
+}
+.text-unlesh{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/* sub banner section style end */
 
 /* header style end  */
 
 
 
 
+
 /* media queries  */
 
-/* for small devices */
+/* for small devices start */
 @media screen and (max-width:767px) {
-    .nav-container,.menu-items,.banner-container{
+    .nav-container,.menu-items,.sub-banner-container{
         flex-direction: column;
     }
+    
     .nav-container{
         padding:40px 20px;
     }
     .banner-container{
         padding: 0 20px;
+        flex-direction: column-reverse;
     }
-    .banner-container>div{
+    .banner-container>div,.sub-banner-container>div{
         width: 100%;
         text-align: center;
     }
+    .banner-description h1{
+        font-size: 70px;
+        
+    }
     .banner-btn-container{
-        justify-content: space-between;
+        justify-content: center;
+        gap: 10px;
+    }
+    .btn-primary{
+        padding: 10px 20px;
+    }
+    .sub-banner-container{
+        padding: 20px;
+        margin-top: 30px;
     }
 }
+
+/* for small devices end  */
