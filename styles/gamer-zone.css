@@ -1,0 +1,156 @@
+/* common style  */
+body {
+    font-family: 'Work Sans', sans-serif;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.text-primary {
+    color: #0B0223;
+}
+.text-secondary{
+color: #534C64;
+}
+.bg-primary{
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+}
+.bg-secondary{
+    background-color: #4EC5F7;;
+}
+
+.btn-primary{
+    padding: 20px 40px;
+    border: 0;
+    border-radius: 45px;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* header style start  */
+
+/* nav style start  */
+.nav-container {
+    display: flex;
+    gap: 35px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    padding: 40px 100px;
+}
+
+.logo-container,
+.menu-items,
+.social-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container {
+    gap: 20px;
+}
+
+.logo-container img {
+    width: 80px;
+    height: 40px;
+}
+
+.logo-container h2 {
+    margin: 0px;
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.logo-container h2::first-letter {
+  
+}
+
+.menu-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 35px;
+}
+
+.menu-items a,
+h4 {
+    color: #3C354F;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    margin: 0;
+}
+
+.social-container {
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(11, 2, 35, 0.10);
+}
+
+.social-container i {
+    font-size: 30px;
+}
+
+/* nav style end  */
+
+/* banner style start  */
+.banner-container{
+    padding: 0 100px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+.banner-container>div{
+    width: 50%;
+}
+.text-description h3{
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 0 5px 0;
+}
+.text-description h1{
+    font-size: 95px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 20px 0;
+}
+.banner-btn-container{
+    margin-top: 40px;
+    display: flex;
+    gap: 25px;
+}
+.image-container img{
+    width: 100%;
+}
+/* banner style end */
+
+/* header style end  */
+
+
+
+
+/* media queries  */
+
+/* for small devices */
+@media screen and (max-width:767px) {
+    .nav-container,.menu-items,.banner-container{
+        flex-direction: column;
+    }
+    .nav-container{
+        padding:40px 20px;
+    }
+    .banner-container{
+        padding: 0 20px;
+    }
+    .banner-container>div{
+        width: 100%;
+        text-align: center;
+    }
+    .banner-btn-container{
+        justify-content: space-between;
+    }
+}
