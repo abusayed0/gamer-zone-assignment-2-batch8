@@ -26,6 +26,7 @@ color: #534C64;
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+    cursor: pointer;
 }
 .btn-primary-text{
     color: #FFF;
@@ -110,7 +111,7 @@ color: #534C64;
 
 /* banner style start  */
 .banner-container{
-    padding: 0 100px;
+    padding: 30px 100px;
     display: flex;
     align-items: center;
     gap: 50px;
@@ -211,6 +212,7 @@ main{
 .card-img img{
     display: block;
     width: 100%;
+    height: 300px;
     border-radius: 16px;
     border: 3px solid white;
    
@@ -253,8 +255,8 @@ main{
     bottom: 0;
     left: 0;
     transform: translate(-50%,calc(100% / 3));
-    max-height: 300px;
-    max-width: 250px;
+    max-height: 200px;
+    max-width: 200px;
 }
 .play-instantly-description>h2{
     margin: 0;
@@ -271,7 +273,7 @@ main{
 .carrer-container{
     gap: 40px;
     background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
-    margin: 130px -100px 0 -100px;
+    margin: 100px -100px 0 -100px;
     padding: 100px;
     color: #FFF;
    
@@ -344,9 +346,9 @@ footer div{
     align-items: center;
 }
 
-footer .col1,footer .col2{
+/* footer .col1,footer .col2{
     border: 1px solid;
-}
+} */
 .logo{
     gap: 20px;
     justify-content: center;
@@ -392,7 +394,7 @@ footer p{
     }
     
     .nav-container{
-        padding:40px 10px;
+        padding:30px 10px;
     }
     .banner-container{
         padding: 0 10px;
@@ -447,4 +449,49 @@ footer p{
     }
 }
 
-/* for small devices end  */
+/* for small devices end */
+
+/* for medium devices start */
+@media screen  and (min-width:768px) and (max-width:991px){
+    .nav-container,.banner-container,.sub-banner-container,.play-instantly,.carrer-container{
+        flex-direction: column;
+    }
+    .nav-container,.banner-container,.sub-banner-container{
+        padding: 30px 50px;
+    }
+    .banner-container>div,.sub-banner-container>div,.play-instantly>div,.carrer-container>div{
+        width: 100%;
+    }
+    .banner-description,.play-instantly-description{
+        text-align: center;
+    }
+    .banner-btn-container{
+        justify-content: center;
+    }
+    main{
+        margin: 50px;
+    }
+    .video-cards-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .play-instantly{
+        gap: 50px;
+    }
+    .play-instantly-badge{
+        left: 50%;
+    }
+    .carrer-container{
+        margin: 100px -50px 0 -50px;
+        padding: 50px;
+
+    }
+    .game-categories-container{
+        grid-template-columns: repeat(3,1fr);
+    }
+    footer{
+        padding: 50px;
+    }
+}
+/* for medium devices end */
+
+/* media queries end  */
