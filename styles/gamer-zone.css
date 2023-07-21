@@ -50,7 +50,7 @@ color: #534C64;
 
 .logo-container,
 .menu-items,
-.social-container,.sub-banner-container{
+.social-container,.sub-banner-container,.play-instantly{
     display: flex;
     align-items: center;
 }
@@ -110,7 +110,7 @@ color: #534C64;
     align-items: center;
     gap: 50px;
 }
-.banner-container>div,.sub-banner-container>div
+.banner-container>div,.sub-banner-container>div,.play-instantly>div
 {
     width: 50%;
 }
@@ -131,8 +131,9 @@ color: #534C64;
     display: flex;
     gap: 25px;
 }
-.image-container img,.sub-banner-image img{
+.image-container img,.sub-banner-image img,.play-instantly-container .instanly-image{
     width: 100%;
+    display: block;
 }
 /* banner style end */
 
@@ -142,7 +143,7 @@ color: #534C64;
     padding: 40px 100px;
     gap: 30px;
 }
-.sub-banner-description{
+.sub-banner-description,.play-instantly-description{
     text-align: right;
 }
 .sub-banner-description>h2{
@@ -165,13 +166,15 @@ color: #534C64;
 
 /* main section style start  */
 main{
-    margin: 70px 100px;
+    margin:100px;
 }
 /* funny videos section style start*/
 
+.funny-videos-container{
+    text-align: center;
+}
 
 .video-cards-container{
-    text-align: center;
     margin-top: 30px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -184,6 +187,7 @@ main{
 
 .video-card:hover .card-img>img{
         filter: brightness(0.50);
+        border: 3px solid tomato;
         
 
 }
@@ -196,9 +200,15 @@ main{
 }
 .card-img{
     position: relative;
+    
+   
 }
 .card-img img{
+    display: block;
     width: 100%;
+    border-radius: 16px;
+    border: 3px solid white;
+   
 }
 .play-now{
     display: none;
@@ -218,9 +228,37 @@ main{
 }
 .video-card>h4{
     text-align: left;
+    margin-bottom: 0;
 
 }
 /* funny videos section style end*/
+
+/* play instantly section style start  */
+
+.play-instantly{
+    margin-top: 90px;
+    gap: 200px;
+    
+}
+.play-instantly-container{
+    position: relative;
+}
+.play-instantly-badge{
+    position: absolute;
+    bottom: -175px;
+    left: -150px;
+    height: 350px;
+    width: 300px;
+}
+.play-instantly-description>h2{
+    margin: 0;
+}
+.play-instantly-description>p{
+    margin: 24px 0 0 0;
+}
+
+
+/* play instantly section style end  */
 
 /* main section style end  */
 
