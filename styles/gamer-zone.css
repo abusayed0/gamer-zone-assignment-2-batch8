@@ -303,13 +303,12 @@ main{
 .game-categories-container{
     margin-top: 90px;
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     gap: 20px;
 }
 .game-category{
  
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     gap: 10px;
     padding: 10px;
@@ -452,7 +451,7 @@ footer p{
 /* for small devices end */
 
 /* for medium devices start */
-@media screen  and (min-width:768px) and (max-width:991px){
+@media screen  and (min-width:768px) and (max-width:1023px){
     .nav-container,.banner-container,.sub-banner-container,.play-instantly,.carrer-container{
         flex-direction: column;
     }
