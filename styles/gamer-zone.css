@@ -66,12 +66,12 @@ color: #534C64;
     gap: 20px;
 }
 
-.logo-container img {
+.logo-img {
     width: 80px;
     height: 40px;
 }
 
-.logo-container h3 {
+.logo-text {
     margin: 0px;
     font-size: 45px;
     font-weight: 700;
@@ -331,12 +331,63 @@ main{
 
 /* main section style end  */
 
+/* footer style start  */
+footer{
+    background-color: #0B0223;
+    padding: 100px 100px;
+    color: #FFF;
+    text-align: center;
+}
+footer div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .col1,footer .col2{
+    border: 1px solid;
+}
+.logo{
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.important-link{
+    margin-top: 40px;
+    gap: 20px;
+    
+}
+.important-link .col1,.important-link .col2{
+    gap: 20px;
+}
+.important-link a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #FFF;
+    text-decoration: none;
+}
+.social-media-link{
+    margin-top: 40px;
+    gap: 20px;
+}
+.social-media-link .col1,.social-media-link .col2{
+    gap: 20px;
+}
+.social-media-link i{
+    font-size: 35px;
+}
+footer p{
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+/* footer style end */
+
 
 /* media queries  */
 
 /* for small devices start */
 @media screen and (max-width:767px) {
-    .nav-container,.menu-items,.sub-banner-container,.play-instantly,.carrer-container,.carrer-options-container{
+    .nav-container,.menu-items,.sub-banner-container,.play-instantly,.carrer-container,.carrer-options-container,.important-link,.social-media-link{
         flex-direction: column;
     }
     
@@ -383,13 +434,16 @@ main{
     .carrer-container{
         margin-left: -10px;
         margin-right: -10px;
-        padding: 30px 10px;
+        padding: 20px 10px;
     }
     .carrer-container,.carrer-options-container>.col2{
         text-align: center;
     }
     .game-categories-container{
         grid-template-columns: 1fr;
+    }
+    footer{
+        padding: 20px 10px;
     }
 }
 
