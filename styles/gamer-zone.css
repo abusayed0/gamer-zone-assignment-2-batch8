@@ -297,7 +297,37 @@ main{
 
 /* carrer section style end */
 
-
+/* game categories section style start */
+.game-categories-container{
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+}
+.game-category{
+ 
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid wheat;
+    border-radius: 50px;
+    cursor: pointer;
+   
+}
+.game-category:hover{
+    border: 1px solid tomato;
+}
+.game-category:hover>h4{
+    color: tomato;
+}
+.game-category>h4{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+/* game categories section style end */
 
 /* main section style end  */
 
@@ -306,7 +336,7 @@ main{
 
 /* for small devices start */
 @media screen and (max-width:767px) {
-    .nav-container,.menu-items,.sub-banner-container,.play-instantly,.carrer-container{
+    .nav-container,.menu-items,.sub-banner-container,.play-instantly,.carrer-container,.carrer-options-container{
         flex-direction: column;
     }
     
@@ -354,6 +384,12 @@ main{
         margin-left: -10px;
         margin-right: -10px;
         padding: 30px 10px;
+    }
+    .carrer-container,.carrer-options-container>.col2{
+        text-align: center;
+    }
+    .game-categories-container{
+        grid-template-columns: 1fr;
     }
 }
 
