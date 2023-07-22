@@ -364,16 +364,19 @@ main {
 .game-categories-container {
     margin-top: 90px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     gap: 20px;
 }
 
 .game-category {
 
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 10px;
-    padding: 10px;
+    padding: 20px;
     border: 1px solid wheat;
     border-radius: 50px;
     cursor: pointer;
@@ -547,7 +550,10 @@ footer p {
     }
 
     .game-categories-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .game-category{
+        padding: 10px;
     }
 
     footer {
